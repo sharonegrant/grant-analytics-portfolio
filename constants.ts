@@ -5,9 +5,6 @@ export const RESUME_URL = "https://docs.google.com/document/d/1UZ4Z1QfEiFHMCcoDP
 export const EMAIL = "emailsharongrant@gmail.com";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/sharonegrant";
 
-// Simple file reference assuming 'sharon.jpg' is in the public root
-export const PROFILE_IMAGE_URL = 'sharon.jpg';
-
 export const SHARON_RESUME_CONTEXT = `
 You are the AI Assistant for Sharon Grant's professional portfolio. 
 Your goal is to answer recruiter questions based on her resume and experience.
