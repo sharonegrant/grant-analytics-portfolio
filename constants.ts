@@ -4,6 +4,7 @@ import { CaseStudy, Skill, Industry, MarketUpdate, ExperienceItem, EducationItem
 export const RESUME_URL = "https://docs.google.com/document/d/1UZ4Z1QfEiFHMCcoDPLGvlBY032D8baps0bysVRbPMaA/edit?usp=drive_link";
 export const EMAIL = "emailsharongrant@gmail.com";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/sharonegrant";
+export const PROFILE_IMAGE_URL = "sharon.jpeg";
 
 export const SHARON_RESUME_CONTEXT = `
 You are the AI Assistant for Sharon Grant's professional portfolio. 

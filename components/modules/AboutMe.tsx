@@ -1,18 +1,29 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Briefcase, GraduationCap, Linkedin, Download, User } from 'lucide-react';
 import Button from '../ui/Button';
 import SkillEndorsements from './SkillEndorsements';
-import { ABOUT_DATA, LINKEDIN_URL, SKILLS_DATA, RESUME_URL } from '../../constants';
+import { ABOUT_DATA, LINKEDIN_URL, SKILLS_DATA, RESUME_URL, PROFILE_IMAGE_URL } from '../../constants';
 
 const AboutMe: React.FC = () => {
+  const [imgError, setImgError] = useState(false);
+
   return (
     <div className="max-w-6xl mx-auto px-6 pb-20">
       {/* Header Profile Section */}
       <div className="flex flex-col md:flex-row gap-8 items-center md:items-start mb-16 border-b border-slate-800 pb-12">
         <div className="shrink-0">
           <div className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-slate-800 shadow-2xl overflow-hidden bg-slate-800 flex items-center justify-center">
-             <User className="w-20 h-20 text-slate-600" />
+             {imgError ? (
+                <User className="w-20 h-20 text-slate-600" />
+             ) : (
+                <img 
+                  src={PROFILE_IMAGE_URL} 
+                  alt="Sharon Grant" 
+                  className="w-full h-full object-cover object-top"
+                  onError={() => setImgError(true)}
+                />
+             )}
           </div>
         </div>
         <div className="text-center md:text-left flex-grow">
