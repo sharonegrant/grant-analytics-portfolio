@@ -89,8 +89,8 @@ export default function App() {
               {page === 'home' && (
                 <>
                   <a href="#case-studies" className="hover:text-white transition-colors py-2">Case Studies</a>
-                  <a href="#demos" className="hover:text-blue-400 transition-colors py-2">Lab</a>
                   <a href="#knowledge" className="hover:text-white transition-colors py-2">Knowledge Hub</a>
+                  <a href="#demos" className="hover:text-blue-400 transition-colors py-2">Lab</a>
                 </>
               )}
             </div>
@@ -160,6 +160,15 @@ export default function App() {
             <CaseStudies studies={CASE_STUDIES} />
           </Section>
 
+          {/* Knowledge Hub */}
+          <Section 
+            id="knowledge"
+            title="Knowledge Hub" 
+            subtitle="Curated insights for every level of technical fluency. Explore the future of analytics."
+          >
+            <KnowledgeHub />
+          </Section>
+
           {/* Interactive Demos */}
           <Section 
             id="demos"
@@ -169,10 +178,10 @@ export default function App() {
             <div className="space-y-12">
               {/* Row 1: ROI & Data Cleaning (Condensed) */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div id="roi">
+                <div id="roi" className="scroll-mt-32">
                    <ROICalculator />
                 </div>
-                <div id="governance">
+                <div id="governance" className="scroll-mt-32">
                    <DataCleaningModule />
                 </div>
               </div>
@@ -186,28 +195,13 @@ export default function App() {
               </div>
 
               {/* Row 3: Dashboard */}
-              <div>
+              <div id="dashboard" className="scroll-mt-32">
                 <DashboardPreview />
               </div>
             </div>
           </Section>
 
-          {/* Knowledge Hub */}
-          <Section 
-            id="knowledge"
-            title="Knowledge Hub" 
-            subtitle="Curated insights for every level of technical fluency. Explore the future of analytics."
-          >
-            <KnowledgeHub />
-          </Section>
-
-          {/* Newsletter Section */}
-          <section className="py-24 px-6 md:px-20 border-t border-slate-900 bg-slate-950 relative">
-             <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
-            <div className="max-w-6xl mx-auto relative z-10">
-                <Newsletter />
-            </div>
-          </section>
+          
         </main>
       ) : (
         <div className="pt-32 animate-in slide-in-from-right-8 duration-500">
@@ -228,7 +222,7 @@ export default function App() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-6">Ready to optimize your data strategy?</h2>
           <p className="text-slate-400 mb-10">
-            Sharon Grant • Senior Business Analytics Professional
+            Sharon Grant • Senior Business Analytics Leader
             <br/>
             <span className="text-sm text-slate-500">MS in Business Analytics • $100M+ Portfolio Management</span>
           </p>

@@ -84,6 +84,12 @@ def clean_unstructured_data(raw_text):
           <Button onClick={handleClean} variant="ai" icon={Sparkles} disabled={loading} className="w-full py-1.5 text-xs shrink-0">
               {loading ? 'Executing Transformation...' : 'Run Normalization Pipeline'}
           </Button>
+
+          <div className="pt-2 border-t border-slate-800 mt-auto">
+            <p className="text-[10px] text-slate-500 leading-relaxed">
+              <strong className="text-emerald-500">Why it matters:</strong> I build pipelines that use LLMs to clean messy, unstructured text into strict JSON schemas ready for analysis.
+            </p>
+          </div>
         </div>
       ) : (
         <div className="flex-grow min-h-[150px]">

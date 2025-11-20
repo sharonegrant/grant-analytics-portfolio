@@ -4,7 +4,9 @@ import { CaseStudy, Skill, Industry, MarketUpdate, ExperienceItem, EducationItem
 export const RESUME_URL = "https://docs.google.com/document/d/1UZ4Z1QfEiFHMCcoDPLGvlBY032D8baps0bysVRbPMaA/edit?usp=drive_link";
 export const EMAIL = "emailsharongrant@gmail.com";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/sharonegrant";
-export const PROFILE_IMAGE_URL = "sharon.jpeg";
+
+// Pointing to the local file in the root directory
+export const PROFILE_IMAGE_URL = "https://i.ibb.co/jZVwH0gs/sharon.jpg";
 
 export const SHARON_RESUME_CONTEXT = `
 You are the AI Assistant for Sharon Grant's professional portfolio. 
@@ -114,19 +116,31 @@ export const MARKET_UPDATES: MarketUpdate[] = [
 ];
 
 export const ABOUT_DATA = {
-  bio: "I am a results driven Analytics Professional bridging the gap between complex data architectures and executive strategy. With a background managing $100M+ portfolios at MITIMCo and optimizing real estate pricing at Coldwell Banker, I specialize in translating raw data into actionable profit growth.",
+  bio: "Effective data analysis requires more than just coding. It requires context. My career began in the high stakes world of institutional finance and real estate operations, where I managed budgets exceeding $100M for organizations like MITIMCo and Tufts University. I understand the pressure executives face because I’ve spent seven years supporting their strategic decisions. I recognized that the best strategies are backed by rigorous data, which drove me to earn my MS in Business Analytics. Today, I bridge the gap between complex data science and executive strategy. I combine operational acumen with advanced tools like Python, Machine Learning, and SQL to build models that don’t just report on the past. They optimize budgets, forecast demand, and recover revenue.",
   experience: [
     {
-      role: "Executive Support Assistant",
+      role: "Executive Support Assistant | Finance Operations & Analytics",
       company: "MIT Investment Management Company (MITIMCo)",
       period: "2022 - Present",
-      description: "Supporting operations for a $30B+ investment portfolio. Streamlining data flows for executive decision making and ensuring high level governance compliance."
+      description: "Supporting finance operations for a $30B+ investment portfolio. Streamlining data flows for executive decision making and ensuring high level governance compliance."
     },
     {
       role: "Senior Real Estate Analyst",
       company: "Coldwell Banker",
       period: "2018 - 2022",
       description: "Led market analysis initiatives using predictive modeling. Improved pricing accuracy by 12% and optimized inventory turnover across regional markets."
+    },
+    {
+      role: "Finance Administrator",
+      company: "Tufts University",
+      period: "Apr 2021 – Nov 2023",
+      description: "Automated financial reporting processes, reducing report preparation time by 30%. Managed budgets exceeding $3M and delivered detailed forecasts to executive leadership enabling strategic decisions. Streamlined financial operations, improving reporting accuracy and regulatory compliance."
+    },
+    {
+      role: "Assistant Subaward Administrator",
+      company: "Massachusetts Institute of Technology",
+      period: "Apr 2017 – Dec 2019",
+      description: "Oversaw grant budgets totaling $2.5M+, ensuring data integrity and compliance with federal regulations. Optimized reporting processes, increasing efficiency by 25% and reducing processing errors. Collaborated with department heads to implement improved data management practices, aligning with institutional goals."
     }
   ] as ExperienceItem[],
   education: [
